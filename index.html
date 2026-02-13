@@ -141,6 +141,8 @@
 
         .itinerary-page.active {
             display: block;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
         }
 
         @keyframes fadeIn {
@@ -321,6 +323,40 @@
             margin-top: 15px;
         }
 
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px 20px;
+                margin: 15px;
+                max-width: calc(100% - 30px);
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .celebration h1 {
+                font-size: 1.5rem;
+            }
+
+            .itinerary-container {
+                margin: 20px 15px;
+                padding: 25px 18px;
+            }
+
+            .itinerary-container h1 {
+                font-size: 1.5rem;
+            }
+
+            .photo-collage {
+                gap: 10px;
+            }
+
+            .timeline-card {
+                padding: 14px 16px;
+            }
+        }
+
         /* Floating hearts background */
         .floating-hearts {
             position: fixed;
@@ -420,7 +456,7 @@
             <p class="subtitle">May 22 – May 26, 2025</p>
 
             <div class="hero-photo">
-                <img src="photos/photo2.JPEG" alt="CNN Center selfie">
+                <img src="photo2.JPEG" alt="CNN Center selfie">
             </div>
 
             <div class="timeline">
@@ -457,13 +493,13 @@
                 <h2>Memories Together 💕</h2>
                 <div class="photo-collage">
                     <div class="photo-item">
-                        <img src="photos/photo1.JPEG" alt="Train photo">
+                        <img src="photo1.JPEG" alt="Train photo">
                     </div>
                     <div class="photo-item">
-                        <img src="photos/photo3.JPEG" alt="Group photo">
+                        <img src="photo3.JPEG" alt="Group photo">
                     </div>
                     <div class="photo-item wide">
-                        <img src="photos/photo4.JPEG" alt="Group selfie">
+                        <img src="photo4.JPEG" alt="Group selfie">
                     </div>
                 </div>
                 <p class="photo-caption">Can't wait to make more memories like these!</p>
